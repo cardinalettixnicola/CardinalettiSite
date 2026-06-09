@@ -1,0 +1,229 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: lightgrey;
+    color: #333;
+    overflow-x: hidden;
+    zoom: 1.2;
+}
+
+header {
+    background: linear-gradient(to right, #1a237e, #3949ab);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    animation: fadeIn 2s ease-out;
+}
+
+header h1,
+header p {
+    color: white;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.8), 0 1px 3px rgba(0,0,0,0.9);
+}
+
+.header-image-container {
+    height: 300px;
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+
+.header-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+p{
+    color: black;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8em;
+}
+
+#navbar-example3 {
+    position: sticky;
+    top: 20px;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+nav {
+    background-color: #303f9f;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffeb3b;
+}
+
+main {
+    padding: 30px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.argomento-titolo {
+    font-weight: bold; color: #0d6efd; margin-top: 1rem;
+}
+.section {
+    margin-bottom: 50px;
+    animation: fadeUp 1s ease-in;
+}
+
+.section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.5s ease;
+}
+
+.section img:hover {
+    transform: scale(1.03);
+}
+
+#PCTO{
+    background-image: url('../immagini/1758392296_b5ed42c75e0a68eb607828f986a67da5.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*Uguale all'index*/
+    background-attachment: fixed;
+    background-position-y: 30%;
+    height: 90vh;
+
+}
+
+#scuola{
+    background-image: url('../immagini/istituto-istruzione-superiore-Marconi-Pieralisi-.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#Certificazioni{
+    background-image: url('../immagini/istituto-istruzione-superiore-Marconi-Pieralisi-.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#Home{
+    background-image: url('../immagini/Nico.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y: 30%;
+    height: 90vh;
+}
+
+#Materie{
+    background-image: url('../immagini/istituto-istruzione-superiore-Marconi-Pieralisi-.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#Educazione_civica{
+    background-image: url('../immagini/Educazione-civica-come-studiarla-per-i-test-universitari.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header-collapsing {
+    height: 80vh;                /* altezza iniziale */
+    min-height: 120px;           /* altezza minima */
+    background-image: url('istituto-istruzione-superiore-Marconi-Pieralisi-.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    transition: height 0.3s ease;
+}
+
+.header-collapsing::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.header-collapsing h1,
+.header-collapsing p {
+    position: relative;
+    z-index: 1;
+}
+
+#competenze.card
+{
+    width: 320px;
+    height: 120px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#competenze.card-group
+{
+    gap: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+#competenze.card.row
+{
+    width: 100%;
+    align-items: center;
+}
+
+#competenze.img
+{
+    max-height: 55px;
+    max-width: 55px;
+    object-fit: contain;
+    padding: 5px;
+}
+
+#competenze.card-title
+{
+    font-size: 1rem;
+    margin: e;
+    text-align: left;
+}
+
+.dropdown-item {
+    padding: 0.25rem 0.75rem;
+    white-space: nowrap;
+    max-width: 90%;
+}
+.dropdown-menu {
+    width: max-content;
+    min-width: 67%;
+    max-width: 110%;
+}
